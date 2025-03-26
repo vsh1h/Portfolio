@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: pink; */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#banner {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.img1{
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #000000;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    background: pink;
+    border-radius: 30px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+.hero:hover {
+    background: #030303; /* Changes background color */
+    color: pink; /* Changes text color */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+.hero h2 span {
+    color: rgb(255, 0, 72);
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: rgb(255, 255, 255);
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+/* Sections */
+section {
+    padding: 10px;
+    text-align: center;
+}
+
+/* about */
+#about{
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    background: pink;
+    border-radius: 30px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+/* Hover Effect */
+#about:hover {
+    background: #030303; /* Changes background color */
+    color: pink; /* Changes text color */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adds depth */
+}
+
+
+
+/* Projects Section */
+/* .projects-container {
+    display: flex; 
+    justify-content: center;  
+    gap: 20px;  
+    flex-wrap: wrap;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* #projects.projects-container.project1:hover {
+    background: #030303; 
+    color: pink; 
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+} */ 
+
+/* Projects Container */
+.projects-container {
+    display: flex;  /* Side-by-side layout */
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;  /* Responsive stacking */
+}
+
+/* Individual Project Cards */
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover Effect */
+.project:hover {
+    background: black;  /* Changes background color */
+    color: pink;  /* Changes text color */
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Links inside project */
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Link Hover Effect */
+.project a:hover {
+    background: rgba(0, 255, 166, 0.689);
+    color: #333;
+}
+
+
+/* Skills */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    background: pink;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* Social Links Section */
+#social {
+    text-align: center;
+    padding: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a img {
+    width: 50px;  /* Adjust size */
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.social-links a img:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+}
