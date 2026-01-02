@@ -3,117 +3,478 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Vanshika Shah | Full Stack Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo">V.Shah</a>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <!-- Navigation Menu -->
+                <nav class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle Dark Mode">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </div>
     </header>
 
-    <section id="banner">
-        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/pillars_of_creation.jpg" alt="Portfolio Banner" class="img1">
-    </section>
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero">
-            <h2>Hi, I'm <span>Vanshika Shah</span></h2>
-            <p>Aspiring Web Developer | Passionate about UI/UX</p>
-            <a href="#contact" class="btn">Get to Know</a>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Vanshika Shah</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science (AI & ML) Student | Problem Solver | Exploring Development & Algorithms</p>
+                    <p class="hero-description">
+                        Curious about technology, driven by problem-solving, and learning to build meaningful solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar">
+                        <img src="https://www.nasa.gov/wp-content/uploads/2023/03/pillars_of_creation.jpg" alt="Vanshika Shah">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm a Computer Science student passionate about web development, design and Competitive Programming.</p>
-        <p>I am passionate about creating beautiful and functional websites.</p>
-        <p>I have a strong interest in technologies and love solving challenges.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p class="section-subtitle">Learn more about who I am</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hi, I'm Vanshika Shah, a second-year Computer Science (AI & ML) student with a genuine interest in problem-solving, algorithms, and software projects.
+                    </p>
+                    <p>
+                        I enjoy working on programming challenges that help me strengthen my understanding of data structures and algorithms, while also building projects that apply these concepts in practical ways. This balance between logical thinking and hands-on development keeps me motivated and constantly learning.
+                    </p>
+                    <p>
+                        I'm also exploring AI and machine learning, along with different areas of computer science, to develop a strong and well-rounded foundation. Through projects and continuous practice, I focus on writing clean code, improving efficiency, and creating solutions that are both functional and thoughtful.
+                    </p>
+                    <p>
+                        I'm excited about opportunities where I can keep learning, grow my skills, and use technology to create meaningful impact.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>8+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Dedicated</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>15</h3>
+                        <p>Skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h2>Study Sphere</h2>
-                <p>StudySphere is a global study platform that fosters collaborative and productive learning. It connects students worldwide, offering interactive study rooms, peer groups, and access to vast e-libraries. Whether studying solo or with friends, StudySphere ensures an engaging and resourceful learning experience.</p>
-                <a href="https://vsh1h.github.io/studysphere/index.html#">View Project</a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p class="section-subtitle">A selection of projects I've worked on</p>
             </div>
-            <div class="project">
-                <h2>PortFolio</h2>
-                <p>A portfolio website showcasing my projects and skills with modern UI/UX design.</p>
-                <a href="https://vsh1h.github.io/Portfolio/">View Project</a>
-            </div>
-            <div class="project">
-                <h2>Trivia</h2>
-                <p>Test your knowledge with this exciting Scratch-based Trivia Game ! Answer fun and challenging questions, score points, and see how much you know !</p>
-                <a href="https://scratch.mit.edu/projects/1074076376/">View Project</a>
-            </div>
-            <div class="project">
-                <h2>Webflow Project 1</h2>
-                <p>A Webflow project that aims to empower people in need , who are vulnerable and deserve to get an equal opportunity.</p>
-                <a href="https://vs-exceptional-site-a23ecc.webflow.io/">View Project</a>
-            </div>
-            <div class="project">
-                <h2>Webflow Project 2</h2>
-                <p>A Webflow project showcasing the latest Movies</p>
-                <a href="https://preview.webflow.com/preview/vs-marvelous-site-8f076d?utm_medium=preview_link&utm_source=designer&utm_content=vs-marvelous-site-8f076d&preview=4c86ed281196733efd19e6625b719b74&workflow=sitePreview">View Project</a>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Global Air Quality Analysis</h3>
+                        <span class="project-badge">Data Mining</span>
+                    </div>
+                    <p class="project-description">
+                        A comprehensive data mining analysis of global air quality using 23,463 cities dataset. Employed K-Means Clustering, Association Rule Mining (Apriori), and Random Forest Regression to identify drivers of PM2.5 pollution.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="https://github.com/vsh1h/Global-Air-Quality" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Code →</a>
+                        <a href="GlobalAQI_Report.pdf" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Report →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>MoodMuse</h3>
+                        <span class="project-badge">Productivity App</span>
+                    </div>
+                    <p class="project-description">
+                        A productivity app combining the Pomodoro technique with relaxing music from Jamendo to help you stay focused, energized, and relaxed.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Pomodoro</span>
+                        <span class="tag">Music</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="https://github.com/vsh1h/nextMusicApp" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Code →</a>
+                        <a href="https://moodmuse-vsh1hs-projects.vercel.app/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Memory Maze</h3>
+                        <span class="project-badge">Game</span>
+                    </div>
+                    <p class="project-description">
+                        A memory card game built with React featuring functional components, hooks-based state management, card flipping logic, and a responsive UI with optimized performance.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Hooks</span>
+                        <span class="tag">Game</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="https://github.com/vsh1h/MEMORY_MAZE" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Code →</a>
+                        <a href="https://memory-maze-8y65ab94m-vsh1hs-projects.vercel.app/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Play Game →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>FreightShare</h3>
+                        <span class="project-badge">Logistics Platform</span>
+                    </div>
+                    <p class="project-description">
+                        A logistics management platform connecting verified shippers and truck drivers for efficient freight matching, secure payments, and real-time tracking.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Full Stack</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Backend</span>
+                    </div>
+                    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                        <a href="https://github.com/vsh1h/FreightShare" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Code →</a>
+                        <a href="https://freight-share.vercel.app/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Live Demo →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Trivia Game</h3>
+                        <span class="project-badge">Game</span>
+                    </div>
+                    <p class="project-description">
+                        An exciting Scratch-based trivia game where players answer challenging questions, score points, and test their knowledge.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Scratch</span>
+                        <span class="tag">Game Design</span>
+                    </div>
+                    <a href="https://scratch.mit.edu/projects/1074076376/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Empowerment Initiative</h3>
+                        <span class="project-badge">Social Impact</span>
+                    </div>
+                    <p class="project-description">
+                        A Webflow project aimed at empowering vulnerable people and providing equal opportunities through accessible digital solutions.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Webflow</span>
+                        <span class="tag">Web Design</span>
+                    </div>
+                    <a href="https://vs-exceptional-site-a23ecc.webflow.io/" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Study Sphere</h3>
+                        <span class="project-badge">Learning Platform</span>
+                    </div>
+                    <p class="project-description">
+                        A global study platform connecting students worldwide with interactive study rooms, peer groups, and vast e-libraries for collaborative learning.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Web App</span>
+                        <span class="tag">Frontend</span>
+                    </div>
+                    <a href="https://vsh1h.github.io/studysphere/index.html" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Movie Showcase</h3>
+                        <span class="project-badge">Media Project</span>
+                    </div>
+                    <p class="project-description">
+                        A visually stunning Webflow project showcasing the latest movies with modern design and smooth interactions.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Webflow</span>
+                        <span class="tag">Design</span>
+                    </div>
+                    <a href="https://preview.webflow.com/preview/vs-marvelous-site-8f076d?utm_medium=preview_link&utm_source=designer&utm_content=vs-marvelous-site-8f076d&preview=4c86ed281196733efd19e6625b719b74&workflow=sitePreview" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View Project →</a>
+                </article>
+
             </div>
         </div>
     </section>
 
-
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>MySQL</li>
-            <li>GitHub</li>
-            <li>Data Structure Algorithms</li>
-        </ul>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h4>HTML</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>CSS</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>JavaScript</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>React</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Python</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>MySQL</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Data Structures</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>GitHub</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Pandas</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>MongoDB</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="skill-percent">90%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Node.js</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                    <span class="skill-percent">75%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Next.js</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>NumPy</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                    <span class="skill-percent">95%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Matplotlib</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                    <span class="skill-percent">85%</span>
+                </div>
+
+                <div class="skill-item">
+                    <h4>Express JS</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="skill-percent">80%</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: vanshika.k@adypu.edu.in</p>
-        <a href="https://www.linkedin.com/in/vanshika-shah-b67981322/">LinkedIn</a>
-    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p class="section-subtitle">I'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
 
-    <section id="socials">
-        <h2>Socials</h2>
-        <div class="social-links">
-            <a href="https://github.com/vsh1h">
-                <img src="github-mark.png" alt="GitHub">
-            </a>
-            <a href="https://leetcode.com/u/vsh1h/">
-                <img src="LeetCode_logo_black.png" alt="LeetCode">
-            </a>
-            <a href="https://codeforces.com/profile/VSH1H">
-                <img src="cf logo.png" alt="CodeForces">
-            </a>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Other Ways to Reach Me</h3>
+                    
+                    <div class="contact-item">
+                        <h4>📧 Email</h4>
+                        <a href="mailto:vanshika.k@adypu.edu.in">vanshika.k@adypu.edu.in</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>💼 LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/vanshika-shah-b67981322/" target="_blank" rel="noopener noreferrer">Connect with me</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>⬇️ Resume</h4>
+                        <button class="btn btn-secondary" id="resumeBtn">Download Resume</button>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/vsh1h" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                <span class="icon">GitHub</span>
+                            </a>
+                            <a href="https://leetcode.com/u/vsh1h/" target="_blank" rel="noopener noreferrer" title="LeetCode">
+                                <span class="icon">LeetCode</span>
+                            </a>
+                            <a href="https://codeforces.com/profile/VSH1H" target="_blank" rel="noopener noreferrer" title="CodeForces">
+                                <span class="icon">CodeForces</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Vanshika Shah. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vanshika Shah. All rights reserved.</p>
+            <p class="footer-credit">Designed & Built with ❤️</p>
+        </div>
     </footer>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
